@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>일일필사</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> //j쿼리
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
+          rel="stylesheet">
+    <style>
+
+        * {
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        .title_box {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.pixabay.com/photo/2019/04/28/15/13/pen-4163403_1280.jpg');
+            background-position: center;
+            background-size: cover;
+
+            width: 100%;
+            height: 300px;
+
+            color: white;
+        }
+
+        .button_1 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.pixabay.com/photo/2020/01/06/18/14/pen-4745931_1280.jpg');
+            background-position: center;
+            background-size: cover;
+
+            width: 80%;
+            height: 200px;
+            max-width: 1200px;
+            margin: 40px auto 20px auto;
+
+            box-shadow: 0px 0px 3px 0px black;
+            padding: 20px;
+
+            color: white;
+
+            border-color: transparent;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+        }
+
+        .button_2 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.pixabay.com/photo/2015/11/20/18/50/fountain-pen-1053697__480.jpg');
+            background-position: center;
+            background-size: cover;
+
+            width: 80%;
+            height: 200px;
+            max-width: 1200px;
+            margin: 100px auto 20px auto;
+
+            box-shadow: 0px 0px 3px 0px black;
+            padding: 20px;
+
+            color: white;
+
+            border-color: transparent;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .button_3 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.pixabay.com/photo/2015/06/15/20/18/fountain-pen-810540__480.jpg');
+            background-position: center;
+            background-size: cover;
+
+            width: 80%;
+            height: 200px;
+            max-width: 1200px;
+            margin: 100px auto 20px auto;
+
+            box-shadow: 0px 0px 3px 0px black;
+            padding: 20px;
+
+            color: white;
+
+            border-color: transparent;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .button_4 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.pixabay.com/photo/2019/06/05/16/55/stationery-4254089__480.jpg');
+            background-position: center;
+            background-size: cover;
+
+            width: 80%;
+            height: 200px;
+            max-width: 1200px;
+            margin: 100px auto 20px auto;
+
+            box-shadow: 0px 0px 3px 0px black;
+            padding: 20px;
+
+            color: white;
+
+            border-color: transparent;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .button_box_2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 10px;
+        }
+
+        .button_box_2_1 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.pixabay.com/photo/2015/06/25/04/50/hand-print-820913__340.jpg');
+            background-position: center;
+            background-size: cover;
+
+            width: 80%;
+            height: 70px;
+            max-width: 300px;
+            margin: 20px auto 20px auto;
+
+            box-shadow: 0px 0px 3px 0px black;
+            padding: 20px;
+
+            color: white;
+
+            border-color: transparent;
+            border-radius: 50px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .button_box_2_2 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1630022176154-7ba5374f42b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
+            background-position: center;
+            background-size: cover;
+
+            width: 80%;
+            height: 70px;
+            max-width: 300px;
+            margin: 20px auto 20px auto;
+
+            box-shadow: 0px 0px 3px 0px black;
+            padding: 20px;
+
+            color: white;
+
+            border-color: transparent;
+            border-radius: 50px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .button_box_2_3 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1577902425101-b27363a6ad35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+            background-position: center;
+            background-size: cover;
+
+            width: 80%;
+            height: 70px;
+            max-width: 300px;
+            margin: 20px auto 20px auto;
+
+            box-shadow: 0px 0px 3px 0px black;
+            padding: 20px;
+
+            color: white;
+
+            border-color: transparent;
+            border-radius: 50px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .button_box_1 > a {
+            transition: 0.3s;
+        }
+
+        .button_box_1 > a:hover {
+            transform: scale(1.2)
+        }
+
+        .button_box_2 > a {
+            transition: 0.8s;
+        }
+
+        .button_box_2 > a:hover {
+            transform: scale(1.2);
+        }
+
+        .endcard {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                type: "GET",
+                url: "http://spartacodingclub.shop/sparta_api/weather/seoul",
+                data: {},
+                success: function (response) {
+                    $('#temp').text(response['temp'])
+                }
+            })
+        });
+    </script>
+</head>
+
+<body>
+<div class="title_box">
+    <h1>일일일필</h1>
+    <h5>당신의 하루 한줄 필사도우미</h5>
+    <h5>현재 서울 기온: <span id="temp">36</span>도</h5>
+</div>
+<div class="button_box_2">
+    <a class="button_box_2_1" onclick="location.href='ink_of_day.html'">오늘의 추천잉크</a>
+    <a class="button_box_2_2">필사거리 추천하기</a>
+    <a class="button_box_2_3">필사러 추천 아이템</a>
+</div>
+<div class="button_box_1">
+    <a class="button_1" onclick="location.href='one_line.html'">
+        <h1>한 줄 필사</h1>
+    </a>
+
+    <a class="button_2" onclick="location.href='one_line_english.html'">
+        <h1>한 줄 영어 필사</h1>
+    </a>
+
+    <a class="button_3" onclick="location.href='poetry.html'">
+        <h1>시 필사</h1>
+    </a>
+
+    <a class="button_4" onclick="location.href='long_word.html'">
+        <h1>장문 필사</h1>
+    </a>
+</div>
+
+<h6 class="endcard">made by bloo_pallete</h6>
+</body>
+</html>
